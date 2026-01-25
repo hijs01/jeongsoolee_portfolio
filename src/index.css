@@ -4,15 +4,15 @@
   font-family: 'Noto Sans KR', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #111;
-  background-color: #e7e1d8;
+  color: #f1f1f1;
+  background-color: #0d0d0d;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --font-display: 'Playfair Display', 'Times New Roman', serif;
-  --page-bg: linear-gradient(120deg, #e7e1d8 0%, #f2ede6 45%, #ddd5ca 100%);
-  --ink: #111;
+  --page-bg: radial-gradient(circle at top right, #2a2a2a 0%, #0f0f0f 55%, #090909 100%);
+  --ink: #f1f1f1;
 }
 
 *,
@@ -24,7 +24,7 @@
 body {
   margin: 0;
   min-width: 320px;
-  background-color: #e7e1d8;
+  background-color: #0d0d0d;
 }
 
 a {

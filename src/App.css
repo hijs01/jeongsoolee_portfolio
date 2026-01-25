@@ -13,7 +13,7 @@
   width: 520px;
   height: 520px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.12), transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.08), transparent 70%);
   z-index: 0;
 }
 
@@ -25,7 +25,7 @@
 .page::after {
   bottom: -240px;
   left: -140px;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.18), transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.12), transparent 70%);
 }
 
 .app-bar {
@@ -37,9 +37,9 @@
   justify-content: space-between;
   gap: 2rem;
   padding: 1.5rem 6vw;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(14px);
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(10, 10, 10, 0.85);
 }
 
 .brand {
@@ -56,8 +56,8 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #111;
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.08);
+  background: #f1f1f1;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
 }
 
 .nav {
@@ -94,7 +94,7 @@
 .ghost-button,
 .primary-button {
   border-radius: 999px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   background: transparent;
   padding: 0.7rem 1.6rem;
   font-size: 0.9rem;
@@ -114,9 +114,9 @@
 }
 
 .primary-button {
-  background: #111;
-  color: #fff;
-  border-color: #111;
+  background: #f1f1f1;
+  color: #0c0c0c;
+  border-color: #f1f1f1;
 }
 
 main {
@@ -168,7 +168,7 @@ main {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.2rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .stat-value {
@@ -179,7 +179,7 @@ main {
 
 .stat-label {
   font-size: 0.9rem;
-  color: rgba(0, 0, 0, 0.65);
+  color: rgba(255, 255, 255, 0.6);
   margin: 0;
 }
 
@@ -192,7 +192,7 @@ main {
 }
 
 .image-frame {
-  background: #111;
+  background: #0c0c0c;
   padding: 1rem;
   border-radius: 28px;
   box-shadow: 0 35px 70px rgba(0, 0, 0, 0.2);
@@ -227,9 +227,9 @@ main {
 .resume {
   margin: 2rem 6vw 5rem;
   padding: 2rem;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 28px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(20, 20, 20, 0.8);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -245,7 +245,7 @@ main {
 .resume-thumb {
   width: 180px;
   height: 230px;
-  background: #111;
+  background: #0c0c0c;
   border-radius: 18px;
   padding: 0.6rem;
   box-shadow: 0 18px 30px rgba(0, 0, 0, 0.2);
@@ -265,7 +265,54 @@ main {
 
 .resume-meta p {
   margin: 0;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.education {
+  padding: 0 6vw 5rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.education-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2.4rem;
+  border-radius: 24px;
+  background: rgba(18, 18, 18, 0.85);
+  backdrop-filter: blur(6px);
+  display: grid;
+  gap: 0.8rem;
+  animation: fade-up 0.9s ease both;
+}
+
+.education-school-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+}
+
+.education-major {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: var(--font-display);
+}
+
+.education-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.55);
+  margin-right: 0.5rem;
+}
+
+.education-school,
+.education-degree,
+.education-date {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  font-family: inherit;
 }
 
 .project-highlights {
@@ -280,8 +327,8 @@ main {
   gap: 0.6rem;
   padding: 0.7rem 1.4rem;
   border-radius: 999px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
   color: inherit;
   text-decoration: none;
   font-size: 0.85rem;
@@ -326,10 +373,10 @@ main {
 }
 
 .highlight-card {
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 1.8rem;
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(18, 18, 18, 0.85);
   backdrop-filter: blur(8px);
   display: grid;
   gap: 0.9rem;
@@ -358,7 +405,7 @@ main {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .highlight-card h3 {
@@ -368,7 +415,7 @@ main {
 
 .highlight-card p {
   margin: 0;
-  color: rgba(0, 0, 0, 0.72);
+  color: rgba(255, 255, 255, 0.72);
   line-height: 1.6;
 }
 
@@ -398,7 +445,7 @@ main {
 
 .projects-track {
   display: grid;
-  gap: 2.5rem;
+  gap: 3.5rem;
 }
 
 .projects-track--stacked {
@@ -414,29 +461,39 @@ main {
   bottom: 0;
   left: 50%;
   width: 2px;
-  background: rgba(0, 0, 0, 0.12);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 20%,
+    rgba(255, 255, 255, 0.2) 80%,
+    rgba(255, 255, 255, 0) 100%
+  );
   transform: translateX(-50%);
   transform-origin: center;
   animation: timeline-grow 0.9s ease both;
 }
 
 .project-card {
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  padding: 1.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2rem;
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(6px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(
+    135deg,
+    rgba(24, 24, 24, 0.9) 0%,
+    rgba(12, 12, 12, 0.9) 100%
+  );
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   animation: fade-up 0.9s ease both;
   position: relative;
 }
 
 .project-card--wide {
-  min-height: 360px;
-  padding: 3rem;
+  min-height: 320px;
+  padding: 2.4rem;
   display: grid;
   align-content: start;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
 .project-card--left {
@@ -454,11 +511,11 @@ main {
   content: '';
   position: absolute;
   top: 36px;
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  background: #111;
-  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.08);
+  background: #f1f1f1;
+  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.08);
 }
 
 .project-card--left::after {
@@ -483,41 +540,76 @@ main {
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.16);
-}
-
-.project-meta {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  margin-bottom: 1rem;
-  color: rgba(0, 0, 0, 0.6);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 28px 46px rgba(0, 0, 0, 0.5);
 }
 
 .project-card h3 {
   margin: 0;
   font-family: var(--font-display);
+  font-size: clamp(1.4rem, 1vw + 1rem, 1.8rem);
 }
 
 .project-title-row {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.6rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.4);
+}
+
+.project-logo--large {
+  width: 90px;
+  height: 90px;
+}
+
+.project-logo--light-bg {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.4);
 }
 
 .project-role {
   margin: 0;
   font-style: italic;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 0.95rem;
 }
 
-.projects-track .project-meta {
-  justify-content: flex-start;
-  margin-bottom: 0;
+.project-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  width: fit-content;
+}
+
+.project-meta {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.project-header .project-role {
+  font-size: 0.85rem;
+}
+
+.project-summary {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.98rem;
+  line-height: 1.7;
 }
 
 @keyframes fade-up {

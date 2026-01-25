@@ -92,6 +92,23 @@ function Home() {
           Download Resume
         </a>
       </section>
+      <section className="education">
+        <div className="section-header">
+          <h2>Education</h2>
+        </div>
+        <div className="education-card">
+          <h3 className="education-school-title">Pennsylvania State University</h3>
+          <p className="education-major">
+            <span className="education-label">Major</span> Cybersecurity Analytics
+            and Operations
+          </p>
+          <p className="education-school">
+            College of Information Sciences and Technology
+          </p>
+          <p className="education-degree">Bachelor of Science</p>
+          <p className="education-date">Graduation: 2026.05.09</p>
+        </div>
+      </section>
       <section className="project-highlights">
         <div className="section-header">
           <h2>Project Highlights</h2>
