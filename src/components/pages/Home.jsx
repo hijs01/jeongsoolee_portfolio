@@ -16,11 +16,6 @@ function Home() {
       viewProjects: 'View projects',
       linkedin: 'LinkedIn',
       github: 'GitHub',
-      stats: [
-        { value: '6+', label: 'Years building UI' },
-        { value: '24', label: 'Shipped products' },
-        { value: 'KR + US', label: 'Global teams' },
-      ],
       resumeTitle: 'Resume',
       resumeNote: "Click 'Download' Button to see Jeongsoo Lee's full resume.",
       resumeDownload: 'Download Resume',
@@ -68,11 +63,6 @@ function Home() {
       viewProjects: '프로젝트 보기',
       linkedin: '링크드인',
       github: '깃허브',
-      stats: [
-        { value: '6+', label: 'UI 개발 경험' },
-        { value: '24', label: '출시한 제품' },
-        { value: 'KR + US', label: '글로벌 팀 경험' },
-      ],
       resumeTitle: '이력서',
       resumeNote: '다운로드 버튼을 눌러 이력서 전문을 확인하세요.',
       resumeDownload: '이력서 다운로드',
@@ -154,14 +144,6 @@ function Home() {
               </span>
               {copy.github}
             </a>
-          </div>
-          <div className="stats">
-            {copy.stats.map((stat) => (
-              <div key={stat.label}>
-                <p className="stat-value">{stat.value}</p>
-                <p className="stat-label">{stat.label}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
